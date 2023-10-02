@@ -5,16 +5,11 @@ import csv
 with open("phonebook_raw.csv", 'r', encoding='utf-8') as f:
     rows = csv.reader(f, delimiter=",")
     contacts_list = list(rows)
-# pprint(contacts_list)
+
 import re
 
-# numder_tel = r"(\+7|8)?\s*\(\d+\)\s*\d+[\s-]\d+[\s-]\d+"
-# pprint(contacts_list)
 name_list = []
-# dict_otdel = {}
-# parametr = contacts_list[0]
 contacts_list.pop(0)
-# pprint(parametr)
 for name in contacts_list:
 
     #сделал правильный формат имени
